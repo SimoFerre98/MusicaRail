@@ -44,4 +44,13 @@ function setActiveNavLink() {
 document.addEventListener('DOMContentLoaded', () => {
     loadHTML('header.html', 'header-placeholder');
     loadHTML('footer.html', 'footer-placeholder');
+
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navMenu = document.querySelector('.main-nav ul');
+
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
 });
