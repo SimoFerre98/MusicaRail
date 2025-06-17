@@ -1,0 +1,857 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAE6E0; /* Beige/Crema chiaro */
+    color: #583B20; /* Marrone scuro per testo */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #583B20; /* Marrone scuro per titoli */
+}
+
+a {
+    text-decoration: none;
+    color: #583B20;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #EAE6E0;
+    padding: 20px 0;
+    border-bottom: 1px solid #DCD8D0;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.main-nav .logo h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav ul li a {
+    font-weight: 500;
+}
+
+.main-nav ul li a.active {
+    text-decoration: underline;
+}
+
+.nav-right .btn {
+    margin-left: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-light {
+    background-color: transparent;
+    border: 1px solid #583B20;
+    color: #583B20;
+}
+
+.btn-light:hover {
+    background-color: #583B20;
+    color: #EAE6E0;
+}
+
+.btn-dark {
+    background-color: #583B20;
+    color: #EAE6E0;
+    border: 1px solid #583B20;
+}
+
+.btn-dark:hover {
+    background-color: #4a301a;
+    border-color: #4a301a;
+}
+
+/* Search Section */
+.search-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.search-container {
+    display: inline-block;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #DCD8D0;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 400px; /* Adjust as needed */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.search-box i {
+    margin-right: 10px;
+    color: #888;
+}
+
+.search-box input[type="text"] {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-size: 1em;
+    background-color: transparent;
+}
+
+/* Plans Section */
+.plans-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 5%;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.plan-card h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.plan-card p {
+    font-size: 0.95em;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #583B20;
+    color: #EAE6E0;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Spinge il footer in fondo */
+}
+
+.footer-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    color: #EAE6E0;
+    margin-left: 15px;
+    font-size: 1.5em;
+}
+
+.social-links a:hover {
+    color: #DCD8D0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .main-nav {
+        flex-direction: column;
+    }
+    .main-nav .logo {
+        margin-bottom: 15px;
+    }
+    .main-nav .nav-left, .main-nav .nav-right {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .main-nav ul li {
+        margin: 0 10px;
+    }
+    .nav-right {
+        display: flex;
+        justify-content: center;
+    }
+    .plans-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .plan-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .reasons-container {
+        flex-direction: column;
+    }
+    .why-choose-us h2, .how-it-works h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-box {
+        width: 90%;
+    }
+    .plan-card {
+        width: 90%;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .social-links {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-nav .logo h1 {
+        font-size: 2em;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-nav ul li {
+        margin: 5px 0;
+    }
+    .nav-right .btn {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+    .plan-card h2 {
+        font-size: 1.5em;
+    }
+    .why-choose-us h2, .how-it-works h2 {
+        font-size: 1.8em;
+    }
+}
+
+/* Chi Siamo Page Specific Styles */
+.chi-siamo-immagine-testo {
+    position: relative; /* Necessario per posizionare il testo sopra l'immagine */
+    text-align: center; /* Centra il testo orizzontalmente */
+    color: #fff; /* Colore del testo, assumendo che l'immagine di sfondo sia scura */
+    margin-top: 50px; /* Spazio sopra questa sezione */
+}
+
+.chi-siamo-immagine img {
+    width: 100%;
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    max-height: 400px; /* Altezza massima per l'immagine di sfondo */
+    object-fit: cover; /* Assicura che l'immagine copra l'area designata */
+    border-radius: 8px; /* Angoli arrotondati per l'immagine */
+}
+
+.chi-siamo-testo-overlay {
+    position: absolute; /* Posiziona il testo sopra l'immagine */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra orizzontalmente */
+    transform: translate(-50%, -50%); /* Corregge il centraggio */
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente per leggibilità */
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 80%; /* Larghezza del box di testo */
+    max-width: 700px; /* Larghezza massima del box di testo */
+}
+
+.chi-siamo-testo-overlay p {
+    font-size: 1.3em; /* Dimensione del testo */
+    margin: 0; /* Rimuove margini di default del paragrafo */
+    line-height: 1.5;
+    color: #EAE6E0; /* Colore testo più chiaro per contrasto */
+}
+
+.chi-siamo-contenitore {
+    padding: 40px 10%; /* Aumentato padding laterale per centrare di più */
+    max-width: 1200px; /* Larghezza massima per il contenuto */
+    margin: 0 auto; /* Centra il contenitore */
+}
+
+.chi-siamo-riga {
+    display: flex;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.chi-siamo-riga.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.chi-siamo-testo-sinistra {
+    flex-basis: 30%; /* Adjust as needed */
+    padding-right: 30px;
+}
+
+.chi-siamo-testo-sinistra h2 {
+    font-size: 2.5em; /* Aumentata dimensione font */
+    color: #583B20;
+    font-weight: bold; /* Testo in grassetto */
+}
+
+.chi-siamo-testo-destra {
+    flex-basis: 70%; /* Adjust as needed */
+}
+
+.chi-siamo-testo-destra h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.chi-siamo-testo-destra p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.chi-siamo-testo-destra .reason, .chi-siamo-testo-destra .step {
+    margin-bottom: 20px;
+}
+
+.chi-siamo-testo-destra .step {
+    display: flex;
+    align-items: flex-start;
+}
+
+.chi-siamo-testo-destra .step-number {
+    background-color: #583B20;
+    color: #EAE6E0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+/* Partner Page Specific Styles */
+.partner-section {
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.partner-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.partner-logos img {
+    max-height: 220px; /* Ulteriore aumento */
+    max-width: 320px; /* Ulteriore aumento */
+    margin: 30px; /* Margine leggermente aumentato */
+    transition: transform 0.3s ease;
+}
+
+/* Crea Viaggio / Scegli Piano Page Specific Styles */
+.scegli-piano-section {
+    padding: 40px 5%;
+    /* text-align: center; Rimosso per permettere layout flessibile */
+}
+
+.scegli-piano-section h1 {
+    text-align: center;
+    font-size: 2.8em; /* Leggermente più grande */
+    margin-bottom: 50px; /* Più spazio sotto il titolo principale */
+}
+
+.piano-container {
+    display: flex;
+    align-items: center; /* Allinea verticalmente immagine e testo */
+    margin-bottom: 60px; /* Spazio tra i piani */
+    gap: 40px; /* Spazio tra immagine e testo */
+    /* background-color: #fff; -- Rimosso sfondo bianco */
+    padding: 30px;
+    border-radius: 15px; /* Angoli più arrotondati per la card */
+    /* box-shadow: 0 5px 15px rgba(0,0,0,0.1); -- Rimosso box-shadow */
+}
+
+.piano-immagine-sinistra .piano-immagine {
+    order: 1; /* Immagine a sinistra */
+}
+
+.piano-immagine-sinistra .piano-testo {
+    order: 2; /* Testo a destra */
+}
+
+.piano-immagine-destra .piano-immagine {
+    order: 2; /* Immagine a destra */
+}
+
+.piano-immagine-destra .piano-testo {
+    order: 1; /* Testo a sinistra */
+}
+
+.piano-immagine {
+    flex: 1; /* L'immagine occupa una parte flessibile */
+    max-width: 45%; /* Limita la larghezza dell'immagine */
+}
+
+.piano-immagine img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Angoli arrotondati per l'immagine */
+    display: block; /* Rimuove spazio extra sotto l'immagine */
+}
+
+.piano-testo {
+    flex: 1; /* Il testo occupa una parte flessibile */
+    padding: 0 20px; /* Padding interno per il testo */
+}
+
+.piano-testo h2 {
+    font-size: 2.2em; /* Dimensione maggiore per il titolo del piano */
+    font-weight: 700; /* Grassetto */
+    color: #583B20;
+    margin-top: 0; /* Rimuove margine superiore di default */
+    margin-bottom: 15px;
+}
+
+.piano-testo p {
+    font-size: 1em;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.piano-testo .btn-dark {
+    padding: 12px 25px; /* Padding leggermente aumentato per il pulsante */
+    font-size: 1em;
+    border-radius: 25px; /* Bottoni più arrotondati */
+}
+
+.piano-testo .btn-dark:hover {
+    background-color: #4a301a; /* Scurisce leggermente il marrone */
+    border-color: #4a301a;
+    color: #EAE6E0; /* Mantiene il testo chiaro */
+}
+
+/* Responsive adjustments per i piani */
+@media (max-width: 992px) {
+    .piano-container {
+        flex-direction: column;
+        text-align: center; /* Centra il testo quando in colonna */
+    }
+    .piano-immagine-sinistra .piano-immagine,
+    .piano-immagine-destra .piano-immagine {
+        order: 1; /* Immagine sempre sopra */
+        max-width: 80%; /* Immagine più grande in visualizzazione stacked */
+        margin-bottom: 20px;
+    }
+    .piano-immagine-sinistra .piano-testo,
+    .piano-immagine-destra .piano-testo {
+        order: 2; /* Testo sempre sotto */
+    }
+    .piano-testo {
+        padding: 0;
+    }
+}
+
+
+/* Vecchi stili per .scegli-pass-section, potrebbero essere rimossi o adattati se non più usati */
+.scegli-pass-section {
+    padding: 40px 5%;
+    text-align: center;
+}
+
+
+
+/* Contatti Page Specific Styles */
+
+/* Stili per la pagina contatti-info.html */
+.contatti-info-pagina {
+    max-width: 1000px; /* Aumentata la larghezza massima per dare più respiro */
+    margin: 40px auto;
+    padding: 20px;
+    /* Rimosso background-color e box-shadow per togliere la card */
+    display: flex;
+    gap: 80px; /* Aumentato lo spazio tra le due colonne */
+    align-items: flex-start; /* Allinea gli elementi all'inizio se hanno altezze diverse */
+}
+
+.contatti-info-contenitore {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 40px; /* Spazio tra le due colonne */
+}
+
+.contatti-info-colonna-sinistra,
+.contatti-info-colonna-destra {
+    flex: 1; /* Entrambe le colonne occupano metà dello spazio */
+}
+
+.contatti-info-colonna-sinistra h2,
+.contatti-info-colonna-destra h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.contatti-info-colonna-sinistra p {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.contatti-info-colonna-sinistra strong {
+    color: #c5a47e; /* Colore accento */
+}
+
+/* Stili per il form nella colonna destra */
+#contactOwnerForm .form-group {
+    margin-bottom: 20px;
+}
+
+#contactOwnerForm label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+#contactOwnerForm input[type="text"],
+#contactOwnerForm input[type="email"],
+#contactOwnerForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+#contactOwnerForm textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contactOwnerForm button.btn-dark {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#contactOwnerForm button.btn-dark:hover {
+    background-color: #c5a47e;
+}
+
+.form-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.form-message.success {
+    background-color: #e6ffed;
+    color: #28a745;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Stili per la Hero Image in chi-siamo.html */
+.hero-image-container {
+    position: relative;
+    height: 100vh; /* Occupa l'intera altezza della viewport */
+    width: 100vw;
+    overflow: hidden;
+}
+
+.hero-image-container header {
+    position: absolute; /* Sovrappone l'header all'immagine */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Assicura che l'header sia sopra l'immagine */
+    background-color: transparent; /* Rende lo sfondo dell'header trasparente */
+    border-bottom: none; /* Rimuove il bordo inferiore se presente */
+}
+
+/* Modifica per i link dell'header quando è sulla hero image */
+.hero-image-container header .main-nav .logo h1,
+.hero-image-container header .main-nav ul li a {
+    color: #EAE6E0; /* Colore chiaro per contrasto sull'immagine */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7); /* Ombra per leggibilità */
+}
+
+.hero-image-container header .nav-right .btn-light {
+    color: #EAE6E0;
+    border-color: #EAE6E0;
+    text-shadow: none; /* Rimuove l'ombra del testo se applicata globalmente ai link */
+}
+
+.hero-image-container header .nav-right .btn-light {
+    border-color: #EAE6E0;
+}
+
+.hero-image-container header .nav-right .btn-light:hover {
+    background-color: #EAE6E0;
+    color: #583B20;
+}
+
+.hero-image-container header .nav-right .btn-dark {
+    background-color: #EAE6E0; /* Sfondo chiaro per il pulsante scuro */
+    color: #583B20; /* Testo scuro */
+    border-color: #EAE6E0;
+}
+
+.hero-image-container header .nav-right .btn-dark:hover {
+    background-color: #DCD8D0; /* Leggermente più scuro al hover */
+    border-color: #DCD8D0;
+}
+
+
+.hero-image-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Per centrare il contenuto se necessario */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra orizzontalmente */
+}
+
+.hero-image-container .hero-image-content .chi-siamo-immagine img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block; /* Assicura che l'immagine sia visualizzata */
+}
+
+.hero-image-content .chi-siamo-testo-overlay {
+    position: relative; /* Rimuove il posizionamento assoluto precedente */
+    /* z-index: 1; lo testo overlay deve stare sopra l'immagine ma sotto l'header se si sovrappongono */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px 40px; /* Aumentato padding */
+    border-radius: 8px;
+    text-align: center;
+    max-width: 60%; /* Ridotta la larghezza massima per un look più elegante */
+}
+
+.hero-image-content .chi-siamo-testo-overlay p {
+    font-size: 1.8rem; /* Aumentata dimensione font */
+    margin: 0;
+    line-height: 1.5;
+    font-family: 'Playfair Display', serif; /* Usa il font dei titoli per un effetto più elegante */
+}
+
+/* Rimuove gli stili precedenti per full-width-image-section se non più necessari o li adatta */
+.full-width-image-section {
+    width: 100vw; /* Occupa l'intera larghezza della viewport */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 400px; /* Altezza desiderata, puoi regolarla */
+    overflow: hidden; /* Nasconde le parti dell'immagine che eccedono */
+}
+
+.full-width-image-section .chi-siamo-immagine img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Copre l'intera area mantenendo le proporzioni */
+    object-position: center; /* Centra l'immagine */
+}
+
+.full-width-image-section .chi-siamo-testo-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente per leggibilità */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 80%;
+}
+
+.full-width-image-section .chi-siamo-testo-overlay p {
+    font-size: 1.5rem; /* Dimensione del testo, puoi regolarla */
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Assicurati che il contenitore principale non abbia padding che interferisca */
+main {
+    /* overflow-x: hidden; Potrebbe non essere più necessario se la hero image è gestita correttamente */
+    padding-top: 20px; /* Aggiunge un po' di spazio sopra il contenuto principale dopo la hero image */
+}
+
+.contatti-contenitore {
+    padding: 40px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contatti-riga {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: flex-start; /* Allinea gli elementi all'inizio */
+}
+
+.contatti-testo-sinistra {
+    flex-basis: 30%; /* Larghezza per la domanda/titolo */
+    padding-right: 30px; /* Aumentato padding per separare meglio */
+}
+
+.contatti-testo-sinistra h2 {
+    font-size: 2.5em;
+    color: #583B20;
+    font-weight: bold;
+}
+
+.contatti-testo-destra {
+    flex-basis: 70%; /* Larghezza per la risposta/contenuto */
+}
+
+.contatti-testo-destra p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.contatti-testo-destra strong {
+    font-weight: bold; /* Grassetto per i sottotitoli come Indirizzo, Orari, etc. */
+    display: block; /* Fa sì che il strong occupi una riga intera, per spaziatura */
+    margin-bottom: 5px;
+}
+
+.contact-form {
+    margin-top: 40px; /* Aumentato margine superiore */
+    background-color: #fff;
+    padding: 40px; /* Aumentato padding interno */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Ombra più pronunciata */
+    max-width: 700px; /* Larghezza massima per il form */
+    margin-left: auto; /* Centra il form se il contenitore è più largo */
+    margin-right: auto;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #583B20;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DCD8D0;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    box-sizing: border-box; /* Ensures padding doesn't add to width */
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-message.success {
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+}

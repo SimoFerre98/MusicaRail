@@ -1,0 +1,121 @@
+Obiettivo: Creare un sito web completo e funzionale che replichi fedelmente il design, il layout e i contenuti delle pagine mostrate negli screenshot forniti. L'idea centrale è un "Interrail per la musica", un servizio che permette di prenotare viaggi per partecipare a eventi musicali in Europa.
+
+1. Informazioni Generali e Branding:
+
+Nome del Progetto: Music Rail
+Concetto: Un sito web ispirato all'Interrail, ma focalizzato sui viaggi per eventi musicali in tutta Europa. L'utente dovrebbe poter esplorare, prenotare e pianificare il proprio "viaggio musicale".
+Target: Appassionati di musica, viaggiatori, giovani.
+Tonalità del Sito: Elegante, pulito, accogliente, con un tocco di avventura e passione per la musica.
+Colori Dominanti:
+Sfondo: Prevalentemente un beige/crema chiaro (#EAE6E0)(come mostrato in tutti gli screenshot).
+Testo: Marrone scuro per i titoli e il testo del corpo. (#583B20)
+Elementi interattivi (pulsanti, hover): Marrone scuro/terra (#583B20) (come i pulsanti "Maggiori informazioni" e "Unisciti alla community").
+Font:
+Titoli (es. "Scegli il tuo pass", "I nostri partner"): Un font serif elegante e leggermente corposo, che dia un'impressione di raffinatezza (come si vede negli screenshot).
+Testo del corpo e navigazione: Un font sans-serif pulito e leggibile, moderno.
+Layout Generale: Design pulito, con ampi spazi bianchi/crema. Sezioni ben definite, spesso con immagini affiancate al testo o blocchi di contenuto centrati.
+2. Struttura del Sito e Contenuti delle Pagine:
+
+Il sito dovrebbe avere le seguenti pagine principali e sezioni, con i contenuti specifici forniti:
+
+A. Header (Presente su tutte le pagine):
+
+Logo Centrale: "Music Rail" (posizionato al centro in alto).
+Menu di Navigazione (a sinistra):
+Chi siamo
+Crea il tuo viaggio (sottolineato nello screenshot, indica la pagina attiva)
+Aiuto
+Partner
+Pulsanti a Destra:
+Accedi (testo scuro, sfondo trasparente o chiaro)
+Unisciti alla community (pulsante marrone scuro, testo chiaro, bordi arrotondati)
+Barra di ricerca: Presente al centro sotto l'header sulla homepage (come da screenshot "Immagine 2025-06-16 170621.png"). Deve essere un campo di input con un'icona di lente d'ingrandimento e il placeholder "Cerca".
+B. Homepage (Ricostruita dagli screenshot, assumendo un flow logico):
+
+Sezione Introduttiva: Dopo l'header, potenziale area per una hero section o una call to action principale (non esplicitamente negli screenshot, ma tipico). Se lo strumento lo permette, usa lo screenshot con la barra di ricerca come parte iniziale della homepage.
+Sezioni "Piani" (come da "Immagine 2025-06-16 170633.jpg", "Immagine 2025-06-16 170653.jpg", "Immagine 2025-06-16 170705.jpg"):
+"Piano Standard:"
+Immagine: Violino su spartito (Immagine 2025-06-16 170633.jpg)
+Testo: "Percorsi monotematici in base al tuo gusto musicale preferito. Puoi trovare festival musicali monotematici abbinati tra loro in un percorso tutto da scoprire e che vi farà appassionare ancora di più!"
+Pulsante: "Maggiori informazioni" (marrone scuro, bordi arrotondati)
+"Piano Discovery:"
+Immagine: Concerto con pubblico e luci blu (Immagine 2025-06-16 170653.jpg)
+Testo: "Perché fermarsi ad un solo genere musicale? Questo percorso metterà insieme festival variegati per dare l’opportunità di ascoltare cosa più vi piace e chissà, magari scoprire nuovi generi!"
+Pulsante: "Maggiori informazioni" (marrone scuro, bordi arrotondati)
+"Crea il tuo piano:"
+Immagine: Mano che indica una mappa (Immagine 2025-06-16 170705.jpg)
+Testo: "Qui potrai trovare un elenco di festival in programma tra cui scegliere e creare il tuo itinerario personalizzato!"
+Pulsante: "Maggiori informazioni" (marrone scuro, bordi arrotondati)
+Sezione "Perché sceglierci?" (come da "Immagine 2025-06-16 165920.png"):
+Titolo: "Perché sceglierci?" (allineato a sinistra)
+Contenuto (allineato a destra, in blocchi di testo):
+Connessioni autentiche: Incontra altri appassionati di musica e condividi con loro il viaggio.
+Atmosfera unica: Ogni treno è un evento a sé, curato nei dettagli per offrirti il meglio del viaggio e della musica.
+Viaggiamo sostenibile: Il treno è uno dei mezzi di trasporto più ecologici. Con MusicRail puoi esplorare il mondo riducendo il tuo impatto sull'ambiente.
+Sezione "Come funziona?" (come da "Immagine 2025-06-16 165909.png"):
+Titolo: "Come funziona?" (allineato a sinistra)
+Contenuto (allineato a destra, elenco numerato):
+Seleziona il tuo viaggio musicale: Music Rail propone due tipologie di viaggi realizzate da noi ma avrai anche l'opportunità di creare il viaggio su misura per te!
+Scegli le date e la durata del tuo tour: Potrai selezionare tra più eventi disponibili durante l'anno il periodo in cui intendi partire.
+Sali a bordo ed immergiti nella musica: Vengono forniti i biglietti Del treno con opzioni extra (cabina privata…)
+Non ti resta altro da fare che prenotare e goderti l’esperienza musicale che non dimenticherai mai più!
+C. Pagina "Chi siamo":
+
+Titolo Principale: "Chi siamo?"
+Contenuto (come da "Immagine 2025-06-16 165855.png"):
+Paragrafo 1: "MusicRail nasce dalla passione per la musica e dal desiderio di trasformare il viaggio in un’esperienza unica e coinvolgente. Siamo un team di amanti della musica, viaggiatori e creativi che hanno unito le proprie competenze per creare un progetto innovativo e sostenibile, dedicato a tutti coloro che vogliono vivere nuove emozioni attraverso il connubio perfetto tra suoni, cultura e luoghi."
+Sottotitolo: "La nostra missione"
+Paragrafo 2: "Il nostro obiettivo è offrire un modo diverso di viaggiare: più emozionante, più connesso alle persone e più rispettoso del pianeta. Con MusicRail, vogliamo portare i nostri clienti a scoprire la musica in tutte le sue forme, esplorando paesaggi mozzafiato, città storiche e luoghi iconici legati alla cultura musicale."
+Paragrafo 3: "Sogniamo un mondo in cui ogni viaggio sia un’opportunità per ispirarsi e connettersi. La musica è il filo conduttore che ci guida in questo percorso, trasformando il modo in cui viviamo e scopriamo il mondo."
+D. Pagina "Partner" (come da "Immagine 2025-06-16 170758.jpg"):
+
+Titolo Principale: "I nostri partner"
+Loghi Partner: Visualizzare i tre loghi forniti negli screenshot, allineati orizzontalmente e centrati:
+Logo Frecciarossa
+Logo Università di Genova
+Logo giallo/arancione con la lettera "A" stilizzata (come da screenshot)
+E. Pagina "Crea il tuo viaggio" / "Scegli il tuo pass" (come da "Immagine 2025-06-16 170730.png"):
+
+Titolo Principale: "Scegli il tuo pass"
+Tre blocchi di offerta (card), con bordi leggermente arrotondati:
+Global pass:
+Testo: "XXX€"
+Descrizione: "Pass per viaggi transfrontalieri"
+Pulsante: "Maggiori informazioni"
+One country pass:
+Badge in alto: "Più popolare" (di forma stellare/dentellata)
+Testo: "XXX€"
+Descrizione: "Pass per viaggiare in un solo paese"
+Pulsante: "Maggiori informazioni"
+Info pass:
+Testo: "Trova il tuo pass + prenota posti"
+Pulsante: "Maggiori informazioni"
+F. Pagina "Contatti" (come da "Immagine 2025-06-16 165936.png"):
+
+Titolo Principale: "Orari e sede"
+Indirizzo: "Via Antonio Medicina 188/c"
+Orari di apertura:
+Lunedì – Venerdì 10:00 – 18:00
+Sabato – Domenica 10:00 – 13:00
+Contatti (Email): "giuliacom8@gmail.com"
+Modulo di Contatto (Form):
+Campi richiesti: Nome, Cognome, Email, Messaggio.
+Nome per esempio: "Giulia"
+Cognome per esempio: "Comotto"
+Email per esempio: "giuliacom8@gmail.com"
+Il form non deve essere funzionale per l'invio reale (è un sito dimostrativo), ma deve avere un pulsante "Invia" o "Contattaci" che simuli l'invio (es. mostrando un messaggio di conferma, senza inviare email reali).
+3. Footer (Presente su tutte le pagine):
+
+Testo: Può includere "Music Rail" e un copyright (es. "© 2025 Music Rail. Tutti i diritti riservati.").
+Social Media Icons: Includere icone cliccabili per:
+Facebook
+Instagram
+Opzionale: Altri social pertinenti (es. Twitter/X, YouTube) se lo strumento lo supporta e l'estetica lo consente. Le icone dovrebbero essere piccole e discrete, in linea con i colori del sito.
+4. Requisiti Tecnici/Comportamentali per l'AI:
+
+Replicazione Visiva: Priorità assoluta è replicare il più fedelmente possibile il layout, i colori, i font (o font simili che catturino l'estetica) e gli spazi come mostrato negli screenshot.
+Responsive Design: Il sito deve essere completamente responsive e funzionare bene su desktop, tablet e dispositivi mobili.
+Codice Pulito: Generare codice HTML, CSS e JavaScript pulito, ben strutturato e facilmente leggibile.
+Placeholder: Utilizzare "XXX€" per i prezzi e indicare chiaramente che il modulo di contatto è solo dimostrativo (es. con un messaggio dopo il click sul pulsante "Invia").
+Immagini: Utilizzare le immagini fornite negli screenshot come elementi visivi. Se necessario, lo strumento può generare placeholder per immagini mancanti o suggerire immagini stock simili se non si riescono ad estrarre direttamente dagli screenshot.
+Interattività Minima: I pulsanti "Maggiori informazioni" e quelli del menu non devono per forza essere collegati a pagine reali (se lo strumento non lo supporta facilmente), ma devono avere l'aspetto di link attivi.

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - Music Rail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="nav-left">
+                <ul>
+                    <li><a href="chi-siamo.html">Chi siamo</a></li>
+                    <li><a href="crea-viaggio.html">Crea il tuo viaggio</a></li>
+                    <li><a href="contatti-info.html">Contatti</a></li>
+                    <li><a href="partner.html">Partner</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <h1>Music Rail</h1>
+            </div>
+            <div class="nav-right">
+                <a href="#" class="btn btn-light">Accedi</a>
+                <a href="#" class="btn btn-dark">Unisciti alla community</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contatti-contenitore">
+            <div class="contatti-riga">
+                <div class="contatti-testo-sinistra">
+                    <h2>Orari e sede</h2>
+                </div>
+                <div class="contatti-testo-destra">
+                    <p><strong>Indirizzo</strong></p>
+                    <p>Via Antonio Medicina 188/c</p>
+                    <br>
+                    <p><strong>Orari di apertura</strong></p>
+                    <p>Lunedì – Venerdì<br>10:00 – 18:00</p>
+                    <p>Sabato – Domenica<br>10:00 – 13:00</p>
+                    <br>
+                    <p><strong>Contatti</strong></p>
+                    <p>giuliacom8@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Contattaci</h2>
+                <form id="contactForm" onsubmit="return handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Es: Giulia" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cognome">Cognome</label>
+                        <input type="text" id="cognome" name="cognome" placeholder="Es: Comotto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Es: giuliacom8@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="messaggio">Messaggio</label>
+                        <textarea id="messaggio" name="messaggio" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Invia</button>
+                </form>
+                <div id="formMessage" class="form-message" style="display: none;"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                <p>&copy; 2025 Music Rail. Tutti i diritti riservati.</p>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    function handleSubmit(event) {
+        event.preventDefault();
+        const formMessage = document.getElementById('formMessage');
+        formMessage.style.display = 'block';
+        formMessage.className = 'form-message success';
+        formMessage.textContent = 'Grazie per averci contattato! Il tuo messaggio è stato inviato con successo (simulazione).';
+        document.getElementById('contactForm').reset();
+        return false;
+    }
+    </script>
+</body>
+</html>
