@@ -1,14 +1,20 @@
 /* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #EAE6E0; /* Beige/Crema chiaro */
-    color: #583B20; /* Marrone scuro per testo */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAE6E0;
+    color: #333;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
 
 h1, h2, h3 {
@@ -32,7 +38,7 @@ a {
 header {
     background-color: #EAE6E0;
     padding: 20px 0;
-    border-bottom: 1px solid #DCD8D0;
+
 }
 
 .main-nav {
@@ -178,7 +184,7 @@ header {
 .pass-section {
     padding: 60px 5%;
     text-align: center;
-    background-color: #F5F2ED; /* Sfondo leggermente diverso per la sezione */
+    background-color: #EAE6E0; /* Sfondo leggermente diverso per la sezione */
 }
 
 .pass-section h2 {
