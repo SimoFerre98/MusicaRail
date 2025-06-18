@@ -189,6 +189,18 @@ header {
     background-color: #654321; /* Darker brown */
 }
 
+/* Scroll Reveal Animations */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* About Us Section */
 .about-us-section {
     display: flex;
@@ -379,10 +391,13 @@ header {
     }
     .contatti-info-pagina {
         flex-direction: column;
+        gap: 30px; /* Adjusted gap for stacked columns */
     }
     .contatti-info-colonna-sinistra, .contatti-info-colonna-destra {
-        width: 90%;
-        margin-bottom: 30px;
+        width: 100%; /* Full width for mobile/tablet */
+        margin-bottom: 0; /* Remove bottom margin as gap handles spacing */
+        padding: 0 5%; /* Add some horizontal padding */
+        text-align: center; /* Center text for mobile/tablet */
     }
     .contatti-contenitore {
         flex-direction: column;
@@ -1017,9 +1032,10 @@ footer {
 
 .contatti-info-colonna-sinistra h2,
 .contatti-info-colonna-destra h2 {
-    color: #333;
+    color: #583B20; /* Marrone scuro per titoli */
     margin-bottom: 20px;
     font-family: 'Playfair Display', serif;
+    font-weight: bold;
 }
 
 .contatti-info-colonna-sinistra p {
@@ -1071,6 +1087,8 @@ footer {
     font-size: 1rem;
     font-weight: 500;
     transition: background-color 0.3s ease, color 0.3s ease;
+    display: block; /* Make button a block element to center with margin auto */
+    margin: 20px auto 0 auto; /* Center the button */
 }
 
 #contactOwnerForm button.btn-dark:hover {

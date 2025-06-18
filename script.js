@@ -53,4 +53,29 @@ document.addEventListener('DOMContentLoaded', () => {
             navMenu.classList.toggle('active');
         });
     }
+
+    // Scroll reveal animation
+    const scrollElements = document.querySelectorAll('.scroll-reveal');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const delay = parseInt(entry.target.dataset.order) * 100 || 0;
+                setTimeout(() => {
+                    entry.target.classList.add('active');
+                }, delay);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    scrollElements.forEach(el => {
+        observer.observe(el);
+    });
 });
